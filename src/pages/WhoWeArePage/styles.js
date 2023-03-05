@@ -462,13 +462,12 @@ export const ThirdSection = styled.section`
       }
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 800px) {
     .conteiner {
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-direction: row-reverse;
-
       margin: auto;
       margin-top: 40px;
 
@@ -496,6 +495,18 @@ export const ThirdSection = styled.section`
           }
         }
       }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .conteiner {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .conteiner {
+      height: 200px;
     }
   }
 `;
