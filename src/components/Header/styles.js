@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  width: 90vw;
+  width: 100vw;
   height: 104px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 20px auto;
   z-index: 999;
   position: fixed;
   top: -10px;
@@ -19,6 +18,9 @@ export const HeaderContainer = styled.div`
   figure {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+    height: 77px;
+    width: 98px;
   }
 
   nav {
