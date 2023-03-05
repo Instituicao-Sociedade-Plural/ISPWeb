@@ -26,8 +26,32 @@ export const CarouselProvider = ({ children }) => {
     },
   ];
 
+  const CarouselData = {
+    data: data,
+    time: 2000,
+    width: "100vw",
+    height: "535px",
+    captionStyle: {
+      fontSize: "15px",
+      top: "20px",
+    },
+    radius: "10px",
+    captionPosition: "bottom",
+    automatic: true,
+    dots: true,
+    pauseIconColor: "white",
+    pauseIconSize: "40px",
+    slideBackgroundColor: "darkgrey",
+    slideImageFit: "cover",
+    showNavBtn: true,
+    style: {
+      textAlign: "top",
+      maxWidth: "100vw",
+    },
+  };
+
   return (
-    <CarouselContext.Provider value={{ data }}>
+    <CarouselContext.Provider value={{ data, CarouselData }}>
       {children}
     </CarouselContext.Provider>
   );
